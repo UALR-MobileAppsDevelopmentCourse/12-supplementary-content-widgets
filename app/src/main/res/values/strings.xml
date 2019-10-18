@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SupplementaryContent</string>
+    <string name="favourite_action">Mark favourite</string>
+    <string name="erase_action">Delete</string>
+    <string name="settings_action">Settings</string>
+    <string name="next_button_label">Next activity</string>
+    <string name="show_toast_button_label">Show toast</string>
+    <string name="show_custom_toast_button_label">Show custom toast</string>
+    <string name="child_activity_label">Child activity</string>
+    <string name="toast_message">This is a toast message</string>
+    <string name="snackbar_message">This is a snackbar</string>
+    <string name="snackbar_action">action</string>
+    <string name="show_snackbar_button">Show snackbar</string>
+</resources>
