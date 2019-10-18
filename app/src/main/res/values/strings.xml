@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SupplementaryContent</string>
+    <string name="close_sheet">Close sheet</string>
+    <string name="expand_sheet">Expand sheet</string>
+</resources>
