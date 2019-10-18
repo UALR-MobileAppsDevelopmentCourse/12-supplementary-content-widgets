@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.ualr.supplementarycontent">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- TODO 02. We have to declare the activity's parent -->
+        <!-- TODO 02.01. We set the android:parentActivityName attribute -->
+        <!-- TODO 02.02. We need to provide support to Android versions prior to 4.1 -->
+        <!-- We need to define a <meta-data> name-value pair, where the name is
+        "android.support.PARENT_ACTIVITY" and the value is the name of the parent activity -->
+        <activity android:name=".ChildActivity">
+        </activity>
+    </application>
+
+</manifest>
