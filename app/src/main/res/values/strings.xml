@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SupplementaryContent</string>
+    <!-- TODO 03. Define strings used for the menu items -->
+    <string name="favourite_action">Mark favourite</string>
+    <string name="erase_action">Delete</string>
+    <string name="settings_action">Settings</string>
 </resources>

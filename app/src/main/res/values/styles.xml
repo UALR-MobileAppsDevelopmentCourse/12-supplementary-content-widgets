@@ -1,7 +1,6 @@
 <resources>
 
     <!-- Base application theme. -->
-    <!-- TODO 01. Make your AppTheme extend from a theme with no action bar -->
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
