@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SupplementaryContent</string>
+    <string name="show_dialog_button">Show dialog</string>
+    <string name="dialog_msg">Do you want to save changes?</string>
+    <string name="dialog_title">Unsaved changes</string>
+    <string name="save_btn_label">Save</string>
+</resources>
