@@ -17,6 +17,18 @@
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
+    <TextView
+        android:id="@+id/selected_option_tv"
+        android:layout_width="0dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/show_trad_single_dialog_button" />
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/show_trad_single_dialog_button"
         android:layout_width="wrap_content"
@@ -28,26 +40,5 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/show_single_dialog_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/show_single_choice_dialog_button"
-        android:onClick="showSingleDialog"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/show_trad_single_dialog_button" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/show_multi_dialog_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/show_multi_choice_dialog_button"
-        android:backgroundTint="@color/colorAccent"
-        android:onClick="showMultiChoiceDialog"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/show_single_dialog_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

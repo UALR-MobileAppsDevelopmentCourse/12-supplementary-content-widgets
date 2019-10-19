@@ -1,18 +1,10 @@
 <resources>
     <string name="app_name">SupplementaryContent</string>
-    <string name="show_traditional_dialog_button">trad. single-choice list</string>
-    <string name="show_single_choice_dialog_button">single-choice list</string>
-    <string name="show_multi_choice_dialog_button">multi-choice list</string>
+    <string name="show_traditional_dialog_button">Pick a color</string>
     <string name="single_choice_dialog_title">Pick a color</string>
-    <string name="multi_choice_dialog_title">Pick your toppings</string>
     <string-array name="colors">
         <item>Red</item>
         <item>Green</item>
         <item>Blue</item>
-    </string-array>
-    <string-array name="toppings">
-        <item>Onion</item>
-        <item>Lettuce</item>
-        <item>Tomato</item>
     </string-array>
 </resources>
