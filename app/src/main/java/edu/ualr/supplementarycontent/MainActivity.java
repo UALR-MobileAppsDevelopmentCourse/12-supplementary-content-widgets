@@ -4,12 +4,14 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+// TODO 01. We create a new activity that is going to be started from MainActivity. (A child activity)
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName();
@@ -23,14 +25,12 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
     }
 
-    // TODO 03. Specify the options menu for the activity.
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.toolbar_menu, menu);
         return true;
     }
 
-    // TODO 04. Handling click events
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
@@ -45,5 +45,10 @@ public class MainActivity extends AppCompatActivity {
                 return true;
                 default: return super.onOptionsItemSelected(item);
         }
+    }
+
+    public void openChildActivity(View view) {
+        Intent intent = new Intent(this, ChildActivity.class);
+        startActivity(intent);
     }
 }
