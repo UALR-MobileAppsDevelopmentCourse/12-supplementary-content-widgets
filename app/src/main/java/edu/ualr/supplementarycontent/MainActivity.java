@@ -6,7 +6,6 @@ import androidx.appcompat.widget.Toolbar;
 import android.os.Bundle;
 import android.view.View;
 
-// TODO 01. Create a alertDialog managed by within a DialogFragment
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName();
@@ -20,10 +19,18 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
     }
 
-    public void showDialog(View view) {
-        // TODO 10. Create an instance of the dialog
-        ChangesDialogFragment dialog = new ChangesDialogFragment();
-        // TODO 11. Show the dialog
+    public void showTradSingleDialog(View view) {
+        TraditionalSingleChoiceListFragment dialog = new TraditionalSingleChoiceListFragment();
+        dialog.show(getSupportFragmentManager(), FRAGMENT_TAG);
+    }
+
+    public void showSingleDialog(View view) {
+        SingleChoiceListFragment dialog = new SingleChoiceListFragment();
+        dialog.show(getSupportFragmentManager(), FRAGMENT_TAG);
+    }
+
+    public void showMultiChoiceDialog(View view) {
+        MultiChoiceListFragment dialog = new MultiChoiceListFragment();
         dialog.show(getSupportFragmentManager(), FRAGMENT_TAG);
     }
 }
