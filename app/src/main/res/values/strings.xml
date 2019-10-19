@@ -4,5 +4,7 @@
     <string name="erase_action">Delete</string>
     <string name="settings_action">Settings</string>
     <string name="next_button_label">Next activity</string>
+    <string name="show_toast_button_label">Show toast</string>
     <string name="child_activity_label">Child activity</string>
+    <string name="toast_message">This is a toast message</string>
 </resources>

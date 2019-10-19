@@ -4,14 +4,16 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
-// TODO 01. We create a new activity that is going to be started from MainActivity. (A child activity)
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName();
@@ -50,5 +52,19 @@ public class MainActivity extends AppCompatActivity {
     public void openChildActivity(View view) {
         Intent intent = new Intent(this, ChildActivity.class);
         startActivity(intent);
+    }
+
+    public void showToast(View view) {
+        // TODO 01. Instantiate a Toast object.
+        // We must provide the application context, the text message, and the duration of the toast
+        Context context = getApplicationContext();
+        CharSequence text = getResources().getString(R.string.toast_message);
+        int duration = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(context, text, duration);
+        // TODO 02. We define the position of the toast
+        // By default, it's positioned in the bottom center of the screen
+        toast.setGravity(Gravity.TOP, 0, 128);
+        // TODO 03. We display the toast notification
+        toast.show();
     }
 }

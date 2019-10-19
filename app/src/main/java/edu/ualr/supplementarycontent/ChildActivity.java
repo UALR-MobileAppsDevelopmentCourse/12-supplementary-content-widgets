@@ -15,7 +15,6 @@ public class ChildActivity extends AppCompatActivity {
         setContentView(R.layout.activity_child);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        // TODO 03. Enable the up button in the action bar
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }
