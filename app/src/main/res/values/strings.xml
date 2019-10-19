@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">SupplementaryContent</string>
-    <string name="open_time_picker_dialog_button">Pick time</string>
-    <string name="open_date_picker_dialog_button">Pick a date</string>
+    <string name="close_sheet">Close sheet</string>
+    <string name="expand_sheet">Expand sheet</string>
 </resources>
