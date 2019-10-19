@@ -3,6 +3,7 @@ package edu.ualr.supplementarycontent;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
 import android.content.Context;
 import android.content.Intent;
@@ -16,6 +17,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -66,21 +69,33 @@ public class MainActivity extends AppCompatActivity {
         toast.show();
     }
 
-    // TODO 01. Define a customized layout for the toast notification
     public void showCustomToast(View view) {
-        // TODO 02. We retrieve the layout inflater
         LayoutInflater inflater = getLayoutInflater();
-        // TODO 03. Inflate the toast layout and create the corresponding view
         View layout = inflater.inflate(R.layout.custom_toast, (ViewGroup) findViewById(R.id.custom_toast_container));
-        // TODO 04. We set the text of the custom toast
         TextView text = (TextView) layout.findViewById(R.id.text);
         text.setText("This is a custom toast");
         Toast toast = new Toast(getApplicationContext());
-        // TODO 05. We can set toast's gravity and duration
         toast.setGravity(Gravity.BOTTOM, 0, 32);
         toast.setDuration(Toast.LENGTH_LONG);
-        // TODO 06. We plug in the view in the toast
         toast.setView(layout);
         toast.show();
+    }
+
+    public void showSnackbar(View view) {
+        // TODO 02. Get the coordinator layout, parent of the snackbar
+        CoordinatorLayout parentView = findViewById(R.id.rootView);
+        // TODO 03. Create a snackbar object by calling the static make method
+        String msg = getResources().getString(R.string.snackbar_message);
+        int duration = Snackbar.LENGTH_LONG;
+        Snackbar snackbar = Snackbar.make(parentView, msg, duration);
+        // TODO 04. Add an action to the snackbar message
+        snackbar.setAction(R.string.snackbar_action, new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d(TAG, "Snackbar action tapped");
+            }
+        });
+        // TODO 05. Show the message to the user
+        snackbar.show();
     }
 }

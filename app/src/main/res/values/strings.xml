@@ -8,4 +8,7 @@
     <string name="show_custom_toast_button_label">Show custom toast</string>
     <string name="child_activity_label">Child activity</string>
     <string name="toast_message">This is a toast message</string>
+    <string name="snackbar_message">This is a snackbar</string>
+    <string name="snackbar_action">action</string>
+    <string name="show_snackbar_button">Show snackbar</string>
 </resources>
