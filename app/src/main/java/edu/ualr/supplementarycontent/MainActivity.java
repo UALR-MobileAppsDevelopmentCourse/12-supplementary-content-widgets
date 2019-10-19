@@ -19,18 +19,8 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
     }
 
-    public void showTradSingleDialog(View view) {
-        TraditionalSingleChoiceListFragment dialog = new TraditionalSingleChoiceListFragment();
-        dialog.show(getSupportFragmentManager(), FRAGMENT_TAG);
-    }
-
-    public void showSingleDialog(View view) {
-        SingleChoiceListFragment dialog = new SingleChoiceListFragment();
-        dialog.show(getSupportFragmentManager(), FRAGMENT_TAG);
-    }
-
-    public void showMultiChoiceDialog(View view) {
-        MultiChoiceListFragment dialog = new MultiChoiceListFragment();
+    public void showDialog(View view) {
+        CustomDialogFragment dialog = new CustomDialogFragment();
         dialog.show(getSupportFragmentManager(), FRAGMENT_TAG);
     }
 }
