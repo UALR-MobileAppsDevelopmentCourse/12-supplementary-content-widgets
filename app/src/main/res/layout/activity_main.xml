@@ -33,12 +33,23 @@
         android:id="@+id/show_trad_single_dialog_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/show_traditional_dialog_button"
-        android:onClick="showTradSingleDialog"
+        android:text="@string/open_time_picker_dialog_button"
+        android:onClick="showTimePickerDialog"
         android:backgroundTint="@color/colorPrimaryDark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/show_date_picker_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/open_date_picker_dialog_button"
+        android:onClick="showDatePickerDialog"
+        android:backgroundTint="@color/colorPrimary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/show_trad_single_dialog_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,10 +1,5 @@
 <resources>
     <string name="app_name">SupplementaryContent</string>
-    <string name="show_traditional_dialog_button">Pick a color</string>
-    <string name="single_choice_dialog_title">Pick a color</string>
-    <string-array name="colors">
-        <item>Red</item>
-        <item>Green</item>
-        <item>Blue</item>
-    </string-array>
+    <string name="open_time_picker_dialog_button">Pick time</string>
+    <string name="open_date_picker_dialog_button">Pick a date</string>
 </resources>
