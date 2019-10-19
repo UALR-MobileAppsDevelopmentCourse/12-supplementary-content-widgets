@@ -44,6 +44,7 @@ public class MultiChoiceListFragment extends DialogFragment {
                     }
                 }).setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
             @Override
+            // TODO 06. Log selected values when ok button gets clicked
             public void onClick(DialogInterface dialogInterface, int i) {
                 Log.d(TAG, "Selected items: ");
                 for (String item: selectedItems) {
