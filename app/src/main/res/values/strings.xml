@@ -1,8 +1,4 @@
 <resources>
     <string name="app_name">SupplementaryContent</string>
-    <string name="user_login_button_label">Sign in dialog</string>
-    <string name="login_dialog_title">User login</string>
-    <string name="name_field_hint">Username</string>
-    <string name="password_field_hint">Password</string>
-    <string name="sign_in_button_label">Sign in</string>
+    <string name="user_login_button_label">Show bottom sheet </string>
 </resources>

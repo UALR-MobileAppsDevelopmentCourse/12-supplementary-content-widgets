@@ -6,10 +6,11 @@ import androidx.appcompat.widget.Toolbar;
 import android.os.Bundle;
 import android.view.View;
 
+// TODO 01. Define a class for the bottom sheet that extends the BottomSheetDialogFragment class
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName();
-    private static final String FRAGMENT_TAG = "SaveDialog";
+    private static final String FRAGMENT_TAG = "BottomSheetDialog";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showDialog(View view) {
-        CustomDialogFragment dialog = new CustomDialogFragment();
+        CustomBottomSheetDialogFragment dialog = new CustomBottomSheetDialogFragment();
         dialog.show(getSupportFragmentManager(), FRAGMENT_TAG);
     }
 }
