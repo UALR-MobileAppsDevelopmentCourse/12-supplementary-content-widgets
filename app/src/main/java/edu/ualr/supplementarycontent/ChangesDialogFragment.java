@@ -25,7 +25,6 @@ public class ChangesDialogFragment extends DialogFragment {
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
         // TODO 04. We use the Builder class to construct the new dialog
-        Context context;
         AlertDialog.Builder  builder = new AlertDialog.Builder(getActivity());
         // TODO 05. We set the message text of the dialog...
         builder.setMessage(R.string.dialog_msg)
