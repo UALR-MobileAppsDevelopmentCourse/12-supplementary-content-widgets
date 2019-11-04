@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <!-- TODO 03. Add Toolbar to the activity's layout -->
-    <!-- We must define the theme, the popup menu theme, elevation and background -->
+    <!-- We must define the title, theme, the popup menu theme, elevation and background -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
