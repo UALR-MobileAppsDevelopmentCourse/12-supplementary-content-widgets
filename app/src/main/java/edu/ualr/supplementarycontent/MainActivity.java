@@ -6,7 +6,7 @@ import androidx.appcompat.widget.Toolbar;
 import android.os.Bundle;
 import android.view.View;
 
-// TODO 01. Create a alertDialog managed by within a DialogFragment
+// TODO 01. Create a alertDialog managed within a DialogFragment
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName();
