@@ -24,9 +24,11 @@ public class MultiChoiceListFragment extends DialogFragment {
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
         // TODO 04. To create a multi-choice list use the setMultiChoiceItems() method
+        // We'll use the string array toppings as data source
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getActivity());
         dialogBuilder.setTitle(R.string.multi_choice_dialog_title)
-                // TODO 05. Track selected items
+                // TODO 05. Track selected items. We create a list with the name of the selected
+                //  items and another one with the available items
                 .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
             @Override
             // TODO 06. Log selected values when ok button gets clicked
