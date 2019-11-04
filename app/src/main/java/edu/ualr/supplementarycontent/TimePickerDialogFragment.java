@@ -29,7 +29,9 @@ public class TimePickerDialogFragment extends DialogFragment {
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
 
-        // TODO 01. Define the default values for the time picker. Use current time
+        // TODO 01. Define the default values for the time picker. Use the Calendar class to get the current time
+        // hour -> HOUR_OF_DAY;
+        // minute-> MINUTE;
         // TODO 04. Create a new instance of the TimePickerDialog
         return null;
     }
