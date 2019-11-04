@@ -8,6 +8,7 @@ import android.os.Bundle;
 // TODO 01: Define a new xml menu resource to add actions to the action bar. toolbar_menu.xml
 
 // TODO 02: We have to add an item element for each item you want to include in the action bar
+// We have to define for each item in the menu: title, icon, showAsAction and id
 /**
  * "Mark Favorite", should appear as action button always
  * "Delete", should appear as action button if possible
