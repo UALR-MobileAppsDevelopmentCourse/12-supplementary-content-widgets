@@ -1,10 +1,8 @@
 package edu.ualr.supplementarycontent;
 
 import android.app.Dialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -15,9 +13,9 @@ import androidx.fragment.app.DialogFragment;
  * Created by irconde on 2019-10-18.
  */
 
-public class TraditionalSingleChoiceListFragment extends DialogFragment {
+public class SingleChoiceListFragment extends DialogFragment {
 
-    private static final String TAG = TraditionalSingleChoiceListFragment.class.getSimpleName();
+    private static final String TAG = SingleChoiceListFragment.class.getSimpleName();
     private String[] colorValues;
     // TODO 02. Use the defined interface as type to declare a new member of the DialogFragment class
     NoticeDialogListener listener;
