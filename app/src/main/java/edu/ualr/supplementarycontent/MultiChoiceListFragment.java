@@ -27,13 +27,13 @@ public class MultiChoiceListFragment extends DialogFragment {
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
         selectedItems = new ArrayList<>();
         availableItems = getResources().getStringArray(R.array.toppings);
-        // TODO 04. To create a multi-choice list use the setMultiChoiceItems() method
+        // TODO 02. To create a multi-choice list use the setMultiChoiceItems() method
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getActivity());
         dialogBuilder.setTitle(R.string.multi_choice_dialog_title)
                 .setMultiChoiceItems(R.array.toppings, null, new DialogInterface.OnMultiChoiceClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i, boolean isChecked) {
-                        // TODO 05. Track selected items
+                        // TODO 03. Track selected items
                         if (isChecked) {
                             selectedItems.add(availableItems[i]);
                         } else {
@@ -44,7 +44,7 @@ public class MultiChoiceListFragment extends DialogFragment {
                     }
                 }).setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
             @Override
-            // TODO 06. Log selected values when ok button gets clicked
+            // TODO 04. Log selected values when ok button gets clicked
             public void onClick(DialogInterface dialogInterface, int i) {
                 Log.d(TAG, "Selected items: ");
                 for (String item: selectedItems) {
