@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showTradSingleDialog(View view) {
-        TraditionalSingleChoiceListFragment dialog = new TraditionalSingleChoiceListFragment();
+        SingleChoiceListFragment dialog = new SingleChoiceListFragment();
         dialog.show(getSupportFragmentManager(), FRAGMENT_TAG);
     }
 
