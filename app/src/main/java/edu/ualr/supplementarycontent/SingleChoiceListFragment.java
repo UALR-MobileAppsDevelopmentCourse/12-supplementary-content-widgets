@@ -1,6 +1,7 @@
 package edu.ualr.supplementarycontent;
 
 import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
 

@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 
 // TODO 05. The activity tha receives events from dialog must implement the interface
-public class MainActivity extends AppCompatActivity implements TraditionalSingleChoiceListFragment.NoticeDialogListener {
+public class MainActivity extends AppCompatActivity implements SingleChoiceListFragment.NoticeDialogListener {
 
     private static final String FRAGMENT_TAG = "SaveDialog";
     private TextView colorTV;
