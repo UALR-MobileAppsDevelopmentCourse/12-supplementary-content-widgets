@@ -14,7 +14,7 @@ import androidx.fragment.app.DialogFragment;
  */
 public class SingleChoiceListFragment extends DialogFragment {
 
-    private static final String TAG = TraditionalSingleChoiceListFragment.class.getSimpleName();
+    private static final String TAG = SingleChoiceListFragment.class.getSimpleName();
     private String[] colorValues;
 
     @NonNull
@@ -23,7 +23,7 @@ public class SingleChoiceListFragment extends DialogFragment {
         colorValues = getResources().getStringArray(R.array.colors);
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle(R.string.single_choice_dialog_title)
-                // TODO 03. To create a single-choice list use the setSingleChoiceItems() method
+                // TODO 01. To create a single-choice list use the setSingleChoiceItems() method
                 // Although both a traditional list and a list with radio buttons provide a
                 // "single choice" action, you should use setSingleChoiceItems() if you want to
                 // persist the user's choice
